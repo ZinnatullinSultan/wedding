@@ -112,15 +112,27 @@ section {
 .cover-section {
   position: relative;
   height: 100vh;
-  background-image: url('img/cover-bg.webp');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--text-white);
   text-align: center;
+  /* Исправление параллакса для iOS */
+  clip-path: inset(0);
+}
+
+.cover-section::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('img/cover-bg.webp');
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  will-change: transform;
 }
 
 .overlay {
@@ -386,14 +398,26 @@ section {
 .rsvp-section {
   position: relative;
   height: 80vh;
-  background-image: url('img/last.JPEG');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--text-white);
+  /* Исправление параллакса для iOS */
+  clip-path: inset(0);
+}
+
+.rsvp-section::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('img/last.JPEG');
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  will-change: transform;
 }
 
 .rsvp-content {
