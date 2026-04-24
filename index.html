@@ -3,32 +3,16 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Приглашение на свадьбу — Амир и Кристина</title>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans:wght@300;400;500;600&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
-
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=YOUR_API_KEY&lang=ru_RU" type="text/javascript"></script>
+  <link rel="preload" href="font/Caveat-VariableFont_wght.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="img/cover-bg.webp" as="image">
+  <link rel="stylesheet" href="css/styles.css">
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-  <script type="text/javascript">
-    (function() {
-      // Инициализация EmailJS вашим User ID (Public Key)
-      emailjs.init("AM6ykAZaG53of2IPz");
-    })();
-  </script>
+  <script type="text/javascript">window.addEventListener("load", function () { emailjs.init("AM6ykAZaG53of2IPz") });</script>
 </head>
 
 <body>
-
-  <!-- Cover Section -->
   <header class="cover-section" id="cover">
     <div class="overlay"></div>
     <div class="cover-content">
@@ -46,57 +30,46 @@
           </div>
         </div>
       </div>
-
     </div>
   </header>
-
-  <!-- Invitation Section -->
   <section class="invitation-section bg-light">
     <div class="container text-center">
       <h2 class="section-title">Дорогие наши близкие и любимые люди!</h2>
       <p class="section-desc">Десять лет — это не просто срок. Это десять весен, десять зим, тысячи улыбок, сотни ссор и
         миллионы мгновений счастья, которые сделали нас теми, кто мы есть друг для друга. Все это время мы бережно
-        строили наш союз. И вот настал день, когда мы хотим перейти на новый этап. </p>
+        строили наш союз. И вот настал день, когда мы хотим перейти на новый этап.</p>
       <p class="section-desc section-desc--second">Приглашаем Вас стать частью нашей истории и разделить с нами радость
-        свадебного дня. </p>
+        свадебного дня.</p>
     </div>
   </section>
-
-  <!-- Program Section -->
   <section class="program-section bg-white">
     <div class="container text-center">
-      <h2 class="section-title" style="margin-bottom: 60px;">ПРОГРАММА<br>29.08.2026</h2>
+      <h2 class="section-title" style="margin-bottom:60px;">ПРОГРАММА<br>29.08.2026</h2>
       <div class="vertical-timeline">
-
         <div class="v-timeline-item">
           <div class="v-timeline-time">16:00</div>
           <div class="v-timeline-center">
-            <div class="v-timeline-img" style="background-image: url('img/timeline-first.webp');">
-            </div>
+            <div class="v-timeline-img" style="background-image:url(img/timeline-first.webp);"></div>
             <div class="v-timeline-line"></div>
           </div>
           <div class="v-timeline-content">
             <div class="v-timeline-title">Фуршет</div>
           </div>
         </div>
-
         <div class="v-timeline-item">
           <div class="v-timeline-time">16:30</div>
           <div class="v-timeline-center">
-            <div class="v-timeline-img" style="background-image: url('img/timeline-second.jpg');">
-            </div>
+            <div class="v-timeline-img" style="background-image:url(img/timeline-second.webp);"></div>
             <div class="v-timeline-line"></div>
           </div>
           <div class="v-timeline-content">
             <div class="v-timeline-title">Церемония бракосочетания</div>
           </div>
         </div>
-
         <div class="v-timeline-item">
           <div class="v-timeline-time">17:30</div>
           <div class="v-timeline-center">
-            <div class="v-timeline-img" style="background-image: url('img/timeline-third.jpg');">
-            </div>
+            <div class="v-timeline-img" style="background-image:url(img/timeline-third.webp);"></div>
             <div class="v-timeline-line"></div>
           </div>
           <div class="v-timeline-content">
@@ -106,8 +79,7 @@
         <div class="v-timeline-item">
           <div class="v-timeline-time">22:00</div>
           <div class="v-timeline-center">
-            <div class="v-timeline-img" style="background-image: url('img/timeline-fourth.webp');">
-            </div>
+            <div class="v-timeline-img" style="background-image:url(img/timeline-fourth.webp);"></div>
           </div>
           <div class="v-timeline-content">
             <div class="v-timeline-title">Вынос торта</div>
@@ -116,8 +88,6 @@
       </div>
     </div>
   </section>
-
-  <!-- Guest Rules Section -->
   <section class="rules-section bg-light">
     <div class="container">
       <h2 class="section-title text-center">Памятка для гостей</h2>
@@ -131,139 +101,102 @@
           <h3 class="rule-title">Дети</h3>
           <p class="rule-desc">Чтобы вы могли полностью расслабиться и ни о чём не беспокоиться, мы решили провести
             вечер во взрослой компании. Детской программы не предусмотрено, поэтому с нежностью просим Вас оставить
-            детей дома. Спасибо, что понимаете!
-          </p>
+            детей дома. Спасибо, что понимаете!</p>
         </div>
       </div>
     </div>
   </section>
-
-  <!-- Dress Code Section -->
   <section class="dresscode-section bg-white">
     <div class="container text-center">
       <h2 class="section-title">Дресс - код</h2>
       <p class="section-desc">Наша цветовая гамма — как любимый капучино: от нежного бежевого до насыщенного
-        шоколадного.<br>Будем очень рады, если вы вдохновитесь и добавите эти оттенки в свой образ.</p>
-      <img class="palette-img" src="img/colors.webp" alt="Палитра">
+        шоколадного.<br>Будем очень рады, если вы вдохновитесь и добавите эти оттенки в свой образ.</p><img
+        class="palette-img" src="img/colors.webp" alt="Палитра" loading="lazy">
     </div>
   </section>
-
-  <!-- RSVP Section -->
   <section class="rsvp-section" id="rsvp">
     <div class="overlay"></div>
     <div class="rsvp-content container text-center">
       <h2 class="rsvp-title">С нетерпением ждём встречи и объятий с Вами!</h2>
       <p class="rsvp-desc">Просим Вас подтвердить свое присутствие до 29.07.2026</p>
-      <div class="btn-group">
-        <button class="btn btn-transparent" onclick="openModal('declineModal')">ОТКЛОНИТЬ</button>
-        <button class="btn btn-transparent" onclick="openModal('acceptModal')">ПОДТВЕРДИТЬ</button>
-      </div>
+      <div class="btn-group"><button class="btn btn-transparent" onclick='openModal("declineModal");'>ОТКЛОНИТЬ</button>
+        <button class="btn btn-transparent" onclick='openModal("acceptModal");'>ПОДТВЕРДИТЬ</button></div>
     </div>
   </section>
-
-  <!-- Location Section -->
   <section class="location-section bg-white">
     <div class="location-container">
       <div class="location-text">
         <h2 class="section-title text-left">Место проведения</h2>
         <p class="location-address">Татарская усадьба, банкетный зал «Веранда усадьбы»<br>Магистральная ул., 7Б, д.
-          Васильева Бужа </p>
+          Васильева Бужа</p>
       </div>
       <div class="location-map" id="map"></div>
     </div>
   </section>
-
-  <!-- Buttons Section -->
   <section class="buttons-section bg-light">
     <div class="container text-center">
-
       <div class="photo-container">
-        <div class="photo-img" style="background-image: url('img/ruslan.webp');">
-        </div>
+        <div class="photo-img" style="background-image:url(img/ruslan.webp);"></div>
         <div class="photo-contacts">
-          <p>
-            Ведущий, Гильмутдинов Руслан
-          </p>
-          <a href="tel:+79270321617">+7 (927) 032-16-17</a>
+          <p>Ведущий, Гильмутдинов Руслан</p><a href="tel:+79270321617">+7 (927) 032-16-17</a>
           <p>Inst: @gilmutdinovruslan_life</p>
         </div>
-
       </div>
       <p class="photo-desc">На свадьбе будет фотограф, которая запечатлит в кадрах все эмоции торжества. Также мы будем
         рады, если Вы поделитесь фотографиями и видео со свадьбы в канале</p>
-      <div class="btn-group">
-        <a class="btn btn-outline btn--max"
-          href="https://max.ru/join/rmsSQO2C2603MQza7kTRIJjyr2219ZmL7Hj-mE5Sf2g">Max</a>
-      </div>
+      <div class="btn-group"><a class="btn btn-outline btn--max"
+          href="https://max.ru/join/rmsSQO2C2603MQza7kTRIJjyr2219ZmL7Hj-mE5Sf2g">Max</a></div>
       <p class="photo-desc">С любовью, Амир и Кристина!</p>
     </div>
     <p class="photo-dev">Разработчик: Зиннатуллин Султан <a cl href="tel:+79992698007">+7 (999) 269-80-07</a></p>
   </section>
-
-  <!-- Modals -->
-  <!-- Decline Modal -->
   <div class="modal" id="declineModal">
-    <div class="modal-content modal-form bg-light">
-      <span class="close-btn" onclick="closeModal('declineModal')">&times;</span>
-      <img src="img/form.jpg" class="modal-top-img" alt="Фото">
+    <div class="modal-content modal-form bg-light"><span class="close-btn"
+        onclick='closeModal("declineModal");'>&times;</span> <img src="img/form.jpg" class="modal-top-img" alt="Фото">
       <div class="form-container">
         <h3 class="form-title">Я не смогу быть</h3>
         <form class="rsvp-form" id="declineForm">
-          <div class="form-group">
-            <label>Имя Фамилия</label>
-            <input type="text" name="name" required placeholder="Имя Фамилия">
-          </div>
-          <div class="form-group">
-            <label>Сообщение молодоженам</label>
-            <textarea name="message" rows="3" placeholder="Молодожены получат ваше сообщение"></textarea>
-          </div>
-          <button type="submit" class="btn btn-dark submit-btn">ОТПРАВИТЬ</button>
+          <div class="form-group"><label>Имя Фамилия</label> <input type="text" name="name" required
+              placeholder="Имя Фамилия"></div>
+          <div class="form-group"><label>Сообщение молодоженам</label> <textarea name="message" rows="3"
+              placeholder="Молодожены получат ваше сообщение"></textarea></div><button type="submit"
+            class="btn btn-dark submit-btn">ОТПРАВИТЬ</button>
           <div class="form-success" style="display:none;">Спасибо за ответ!</div>
         </form>
       </div>
     </div>
   </div>
-
-  <!-- Accept Modal -->
   <div class="modal" id="acceptModal">
-    <div class="modal-content modal-form bg-light">
-      <span class="close-btn" onclick="closeModal('acceptModal')">&times;</span>
-      <img src="img/form.jpg" class="modal-top-img" alt="Фото">
+    <div class="modal-content modal-form bg-light"><span class="close-btn"
+        onclick='closeModal("acceptModal");'>&times;</span> <img src="img/form.jpg" class="modal-top-img" alt="Фото">
       <div class="form-container">
         <h3 class="form-title">Я принимаю приглашение</h3>
         <p class="form-desc">Чтобы мы знали сколько будет гостей на свадьбе, ответьте на пару вопросов и нажмите кнопку
           "Отправить".</p>
         <form class="rsvp-form" id="acceptForm">
-
-          <div class="form-group">
-            <label>Имя Фамилия</label>
-            <input type="text" name="name" required placeholder="Имя Фамилия">
+          <div class="form-group"><label>Имя Фамилия</label> <input type="text" name="name" required
+              placeholder="Имя Фамилия"></div>
+          <div class="form-group"><label>Ваш телефон</label> <input type="tel" name="phone" id="phoneInput" required
+              placeholder="+7 (___) ___-__-__">
+            <div class="field-error" id="phoneError" style="display:none;color:red;font-size:16px;margin-top:5px;">
+              Пожалуйста, введите корректный номер телефона</div>
           </div>
-          <div class="form-group">
-            <label>Ваш телефон</label>
-            <input type="tel" name="phone" id="phoneInput" required placeholder="+7 (___) ___-__-__">
-            <div class="field-error" id="phoneError" style="display:none; color: red; font-size: 16px; margin-top: 5px;">Пожалуйста, введите корректный номер телефона</div>
-          </div>
-
           <div class="form-group quantities">
-            <div class="qty-control">
-              <label>Сколько людей будет вместе с Вами?</label>
-              <div class="qty-buttons">
-                <button type="button" class="qty-btn" onclick="updateQty('adults', -1)">-</button>
-                <input type="number" id="adults" name="adults" value="0" min="0" readonly>
-                <button type="button" class="qty-btn" onclick="updateQty('adults', 1)">+</button>
-              </div>
+            <div class="qty-control"><label>Сколько людей будет вместе с Вами?</label>
+              <div class="qty-buttons"><button type="button" class="qty-btn"
+                  onclick='updateQty("adults",-1);'>-</button> <input type="number" id="adults" name="adults" value="0"
+                  min="0" readonly="readonly"> <button type="button" class="qty-btn"
+                  onclick='updateQty("adults",1);'>+</button></div>
             </div>
-          </div>
-          <button type="submit" class="btn btn-dark submit-btn">ОТПРАВИТЬ</button>
+          </div><button type="submit" class="btn btn-dark submit-btn">ОТПРАВИТЬ</button>
           <div class="form-success" style="display:none;">Спасибо за ответ!</div>
         </form>
         <p class="form-footer-text">До скорой встречи на свадебном торжестве 29 августа!</p>
       </div>
     </div>
   </div>
-
-  <script src="script.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=YOUR_API_KEY&lang=ru_RU" type="text/javascript"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
