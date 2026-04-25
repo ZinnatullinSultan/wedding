@@ -32,7 +32,7 @@
       </div>
     </div>
   </header>
-  <section class="invitation-section bg-light">
+  <section class="invitation-section bg-white">
     <div class="container text-center">
       <h2 class="section-title">Дорогие наши близкие и любимые люди!</h2>
       <p class="section-desc">Десять лет — это не просто срок. Это десять весен, десять зим, тысячи улыбок, сотни ссор и
@@ -42,7 +42,7 @@
         свадебного дня.</p>
     </div>
   </section>
-  <section class="program-section bg-white">
+  <section class="program-section bg-light">
     <div class="container text-center">
       <h2 class="section-title" style="margin-bottom:60px;">ПРОГРАММА<br>29.08.2026</h2>
       <div class="vertical-timeline">
@@ -88,19 +88,28 @@
       </div>
     </div>
   </section>
+  <section class="location-section bg-white">
+    <div class="location-container">
+      <div class="location-text">
+        <h2 class="section-title text-left">Место проведения</h2>
+        <p class="location-address">Татарская усадьба, банкетный зал «Веранда усадьбы»<br>Магистральная ул., 7Б, д.
+          Васильева Бужа</p>
+      </div>
+      <div class="location-map" id="map"></div>
+    </div>
+  </section>
   <section class="rules-section bg-light">
     <div class="container">
       <h2 class="section-title text-center">Памятка для гостей</h2>
       <div class="rules-grid">
         <div class="rule-card">
           <h3 class="rule-title">Подарки</h3>
-          <p class="rule-desc">Мы будете признательны за подарки в конвертах (вклад в бюджет молодой семьи), которые
-            помогут нам осуществить наши мечты и планы.</p>
+          <p class="rule-desc">Самый ценный подарок для нас - Ваше присутствие! Если Вы хотите дополнительно нас порадовать, мы будем благодарны вкладу в наш семейный бюджет.</p>
         </div>
         <div class="rule-card">
           <h3 class="rule-title">Дети</h3>
           <p class="rule-desc">Чтобы вы могли полностью расслабиться и ни о чём не беспокоиться, мы решили провести
-            вечер во взрослой компании. Детской программы не предусмотрено, поэтому с нежностью просим Вас оставить
+            вечер во взрослой компании. Детской программы не предусмотрено, поэтому с уважением просим Вас оставить
             детей дома. Спасибо, что понимаете!</p>
         </div>
       </div>
@@ -121,16 +130,6 @@
       <p class="rsvp-desc">Просим Вас подтвердить свое присутствие до 29.07.2026</p>
       <div class="btn-group"><button class="btn btn-transparent" onclick='openModal("declineModal");'>ОТКЛОНИТЬ</button>
         <button class="btn btn-transparent" onclick='openModal("acceptModal");'>ПОДТВЕРДИТЬ</button></div>
-    </div>
-  </section>
-  <section class="location-section bg-white">
-    <div class="location-container">
-      <div class="location-text">
-        <h2 class="section-title text-left">Место проведения</h2>
-        <p class="location-address">Татарская усадьба, банкетный зал «Веранда усадьбы»<br>Магистральная ул., 7Б, д.
-          Васильева Бужа</p>
-      </div>
-      <div class="location-map" id="map"></div>
     </div>
   </section>
   <section class="buttons-section bg-light">
@@ -188,7 +187,8 @@
                   min="0" readonly="readonly"> <button type="button" class="qty-btn"
                   onclick='updateQty("adults",1);'>+</button></div>
             </div>
-          </div><button type="submit" class="btn btn-dark submit-btn">ОТПРАВИТЬ</button>
+          </div>
+          <div id="extraGuestsContainer"></div><button type="submit" class="btn btn-dark submit-btn">ОТПРАВИТЬ</button>
           <div class="form-success" style="display:none;">Спасибо за ответ!</div>
         </form>
         <p class="form-footer-text">До скорой встречи на свадебном торжестве 29 августа!</p>
